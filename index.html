@@ -1,85 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Undangan Pernikahan</title>
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Pernikahan Cici & Fikri</title>
 
+    <meta property="og:title" content="Undangan Pernikahan Cici & Fikri - Hari, 16 Juni 2026">
+    <meta property="og:description" content="Undangan Pernikahan Nama Cici & Fikri - Selasa, 16 Juli 2026 di Gedung geda gedi, Medan">
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
+    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
+
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   <link rel="stylesheet" href="css/menikah.css">
 
   <style>
 
-    html{
-        height: 100%;
-        overflow: hidden;
-    }
+/* ================= GLOBAL ================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: url("./image/2.jpeg") no-repeat;
-      font-family: 'Raleway', sans-serif;
-    }
+/* ================= LANDING (OPEN INVITATION) ================= */
+#landing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 
-    .welcome-wrapper {
-      text-align: center;
-      padding: 40px 24px;
-      max-width: 420px;
-      width: 90%;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    .welcome-heading {
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      color: #666;
-      margin-bottom: 30px;
-    }
+  background: url("./image/2.jpeg") no-repeat center/cover;
 
-    .welcome-couple {
-      font-family: 'Cherry Blossom Script', cursive;
-      font-size: 3rem;
-      color: #000;
-      margin-bottom: 32px;
-    }
+  z-index: 999;
+  transition: 0.6s;
+}
 
-    .welcome-card {
-      background: rgba(0,0,0,0.05);
-      padding: 22px 18px;
-      border-radius: 16px;
-      margin-bottom: 28px;
-    }
+/* isi landing */
+.welcome-wrapper {
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 420px;
+  width: 90%;
+}
 
-    .welcome-label {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 10px;
-    }
+/* teks kecil */
+.welcome-heading {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 30px;
+}
 
-    .welcome-name {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 28px;
-    }
+/* nama pasangan */
+.welcome-couple {
+  font-family: 'Cherry Blossom Script', cursive;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 32px;
+}
 
-    .welcome-place {
-      font-size: 0.9rem;
-      color: #666;
-    }
+/* card nama tamu */
+.welcome-card {
+  background: rgba(0,0,0,0.05);
+  padding: 22px 18px;
+  border-radius: 16px;
+  margin-bottom: 28px;
+}
 
-    .btn-open {
-      display: inline-block;
-      padding: 14px 34px;
-      background: #000;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-  </style>
+/* label */
+.welcome-label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* nama tamu */
+.welcome-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* tempat */
+.welcome-place {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* tombol */
+.btn-open {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-open:hover {
+  background: #333;
+}
+
+/* ================= UNDANGAN ================= */
+#undangan {
+  display: none;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+/* ================= FIX SCROLL ================= */
+body.loaded {
+  overflow: auto;
+}
+
+</style>
   <link rel="icon" type="image/png" href="image/favicon.png" />
   
    
@@ -94,11 +168,18 @@
     </div>
     <!-- End Preloader-->
 
+      <audio id="lagu" autoplay loop muted>
+  <source src="audio/musik.mp3" type="audio/mpeg">
+</audio>
+<button id="btnMusik" class="musik-btn">▶</button>
+    <div id="landing">
+      
   <div class="welcome-wrapper">
     <div class="welcome-heading">THE WEDDING OF</div>
     <div class="fotobunga">
       <img src="./image/image-removebg-preview.png">
     </div>
+
 
     <div class="welcome-couple">
       Cici & Fikri
@@ -112,41 +193,480 @@
       <div class="welcome-place">Di Tempat</div>
     </div>
 
-    <a id="btnUndangan" class="btn-open">
-      Open Invitation
+    <a id="btnUndangan" href="#">
+  Open Invitation
+</a>
     </a>
   </div>
+  </div>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const nama = params.get("to");
+  <div id="undangan" style="display:none;">
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Waktu
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Lokasi
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#ucapan">
+                  Ucapan & doa
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  Ucapan Terimakasih
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <img src="./image/image-removebg-preview.png" class="imgbunga"><br>
+            <img src="./image/image-removebg-preview (1).png" width="200px">
+            <h2 class="title">
+              <span class="name">Cici</span><br>
+              <span class="and">and</span><br>
+              <span class="name">Fikri</span></h2>
 
-    const namaTamuEl = document.getElementById("nama-tamu");
-    const btn = document.getElementById("btnUndangan");
+          
 
-    if (nama) {
-      const namaFix = nama.replace(/\+/g, " ");
-      namaTamuEl.innerText = namaFix;
-      btn.href = `undangan.html?to=${encodeURIComponent(namaFix)}`;
-    } else {
-      btn.href = "undangan.html";
-    }
-  </script>
+            <br>
+            <h4 class="subtitle tempatwaktu">
+              <p class="bodytext">
+                16.06.2026 
+              
+            </h4>
+          </div>
+          <div class="spasi"> </div>
+          <!-- Start Countdown -->       
+      
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Waktu</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Lokasi</a>
+                  </li>
+                  <li>
+                    <a href="#ucapan">Ucapan & doa</a>
+                  </li>
 
-  <script>
-  const btn = document.getElementById("btnUndangan");
-  btn.addEventListener("click", (e) => {
-    e.preventDefault(); // cegah pindah langsung
-    const audio = new Audio("audio/lagu.mp3");
-    audio.play().then(() => {
-      // setelah musik mulai, baru pindah halaman
-      window.location.href = "undangan.html";
-    }).catch(err => {
-      console.log("Safari blok autoplay:", err);
-      window.location.href = "undangan.html";
-    });
+                  <li>
+                    <a href="#rsvp">Ucapan Terimakasih</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+
+    <section class="section-ayat">
+  <div class="container has-text-centered" data-aos="fade-up">
+
+  <img src="./image/image-removebg-preview (2).png">
+
+    <!-- Ayat 1 -->
+    <div class="ayat-box">
+      <p class="ayat-arab">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+        لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+      </p>
+
+      <p class="ayat-arti">
+        “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+        pasangan-pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram
+        kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
+      </p>
+
+      <p class="ayat-sumber">
+        (QS. Ar-Rum: 21)
+      </p>
+    </div>
+
+    <!-- Ayat 2 -->
+    <!--<div class="ayat-box">
+      <p class="ayat-arab">
+        رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ
+      </p>
+
+      <p class="ayat-arti">
+        “Ya Tuhan kami, anugerahkanlah kepada kami pasangan dan keturunan
+        sebagai penyejuk mata (kami).”
+      </p>
+
+      <p class="ayat-sumber">
+        (QS. Al-Furqan: 74)
+      </p>
+    </div> -->
+
+  </div>
+</section>
+     <section class="section-nama no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <br>
+          <h2 class="bride">Dengan memohon rahmat dan ridho Allah SWT.<br> kami bermaksud menyelenggarakan acara pernikahan kami: </h2>
+        </div>
+
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            dr. Zen Nisa Cinka Hatika Tanto
+          </div><br>
+           <div class="anakdari">
+            Putri dari <br>
+            Bapak H. Hadi Tanto, S.TP.<br>
+            Ibu Hj. Murtini, S.K.M.
+            <br>
+            </div><br>
+          <div class="ampersand">&</div> <br>
+          <div class="nama-lengkap">
+          dr. Ahmad Fikri Pulungan
+          </div><br>
+          <div class="anakdari1">
+            Putra dari <br>
+            Bapak Alm. H. Drs. M. Solih Pulungan, M.M. <br>
+            Ibu Hj. Nurkhadijah Sipahutar
+          </div>
+
+           
+        </div>
+        
+      </section>
+      <!-- End regular-section-->    
+      
+      <!-- ayat alquran-->
+      <!-- ======================
+     SECTION AYAT AL-QURAN
+====================== -->
+
+
+
+
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="jdlakad has-text-centered" style="text-align:center;">Yang insyaallah akan dilaksanakan pada : <br></div>
+        <div class="columns is-centered">
+          
+          <br>
+            <div class="column is-4 has-vertically-aligned-content">
+             <div class="waktu-akad">
+              <p class="waktu is-larger has-text-centered">
+               Akad Nikah <br>
+                Selasa,16 Juni 2026<br>
+                08.00 s/d selesai
+              </p>
+            </div>
+             </div>
+             </div>
+            
+              <br>
+              <br>
+              <br>
+
+              <div class="columns is-centered">
+            <div class="column is-4 has-vertically-aligned-content">
+              <h1 class="waktu-wib  is-larger has-text-centered">
+                Resepsi
+                <br>
+                Selasa,16 Juni 2026<br>
+                11.00 s/d 17.00 WIB
+              </h1>
+            </div>
+            </div>
+
+        
+
+          <div>
+            <ul id="hitungmundur" data-aos="fade-up" data-aos-easing="linear">
+              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+            </ul>
+            
+            </div>
+            <script type="text/javascript">
+  var harih = '06/16/2026 09:00:00';
+
+  $('#hitungmundur').countdown({
+    date: harih,
+    offset: +7, // WIB
+    day: 'Hari',
+    days: 'Hari'
+  }, function () {
+    console.log('Acara dimulai');
   });
 </script>
+
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE
+&text=Undangan+Pernikahan+Fikri+dan+Cici
+&dates=20260616T090000/20260616T210000
+&details=Akad+dan+Resepsi+Pernikahan+Fikri+%26+Cici
+&location=Semba+Garden+Medan
+&ctz=Asia/Jakarta"
+target="_blank"
+class="button has-tooltip btn-cta">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Google Calendar
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-lokasi" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <p class="tempat is-larger has-text-centered">
+              Semba Garden Convention Hall
+              <br>
+              <span class= "tempat1">Jalan Bunga Mawar No.108,
+              Beringin, <br>Medan Selayang,
+              PB Selayang II, <br> Kota Medan.
+              <br></span>
+            </p>
+            <br><br><br>
+      
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1736758937996!2d98.63935377530584!3d3.547391196426856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312ff3bc6cace3%3A0x5b9ede699ba4bb00!2sSemba%20Garden!5e0!3m2!1sid!2sid!4v1770367407851!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://maps.app.goo.gl/PfHXvQo4De9ywdA37" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+    <section class="section-ucapan regular-section" id="ucapan">
+        <div class="container">
+         <h1 class="title has-text-centered section-title" data-aos="fade-up">
+      Ucapan & Doa
+    </h1>
+
+    <!-- Form -->
+    <div class="box" data-aos="fade-up">
+      <div class="has-text-centered">
+      <div class="field">
+        <label class="label">Nama</label>
+        <input id="nama" class="input" placeholder="Nama Anda">
+      </div>
+
+      <div class="field">
+        <label class="label">Ucapan & Doa</label>
+        <textarea id="pesan" class="textarea" placeholder="Tulis doa terbaik"></textarea>
+      </div>
+   
+      <button class="button-komen is-primary" onclick="kirimUcapan()">
+        Kirim
+      </button>
+    </div>
+      
+       <!-- LIST KOMENTAR -->
+    <div id="list-ucapan" class="komentar-box"></div>
+    </div>
+</section>
+
+      <!-- Begin RSVP Content -->
+      <section class="section-thanks contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Ucapan Terimakasih</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="isiucapan1">
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                <br>
+                apabila Bapak/Ibu/Saudara/i berkenan hadir
+                memberikan doa restu.
+                <br>
+              </a >
+              <div class="space40px"></div>
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <p class="isiucapan" data-aos="fade-up" data-aos-easing="linear">
+                Kami yang berbahagia,
+                <br>
+                <a class="instagram":" href="https://instagram.com/zenisaaa" target="_blank" alt="Instagram CPW">
+                  <i class="fab fa-instagram"></i> @zenisaaa
+                </a>
+                <a class="instagram">&</a>
+                &nbsp
+                <a class="instagram" href="https://instagram.com/drfikrii" target="_blank" alt="Instagram CPP">
+                  <i class="fab fa-instagram"></i> @drfikrii
+                </a>
+              </p>
+
+            </div>
+ 
+         </div>
+        </div>
+      </section>
+      <!-- End RSVP Content -->
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  <script>
+const params = new URLSearchParams(window.location.search);
+const nama = params.get("to");
+
+const namaTamuEl = document.getElementById("nama-tamu");
+
+// tampilkan nama tamu di landing
+if (nama) {
+  const namaFix = nama.replace(/\+/g, " ");
+  namaTamuEl.innerText = namaFix;
+}
+</script>
+  <script>
+const audio = document.getElementById("lagu");
+const btnMusik = document.getElementById("btnMusik");
+const btnOpen = document.getElementById("btnUndangan");
+
+/* =========================
+   AUTOPLAY (ANDROID + WINDOWS)
+========================= */
+window.addEventListener("load", () => {
+  audio.play().then(() => {
+    console.log("autoplay jalan");
+
+    // buka suara pelan
+    audio.muted = false;
+    audio.volume = 0;
+
+    let vol = 0;
+    const fade = setInterval(() => {
+      if (vol < 1) {
+        vol += 0.1;
+        audio.volume = vol;
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+
+  }).catch(() => {
+    console.log("kena blok (Safari)");
+  });
+});
+
+/* =========================
+   OPEN INVITATION
+========================= */
+btnOpen.addEventListener("click", function(e){
+  e.preventDefault();
+
+  // jaga kalau autoplay gagal
+  if (audio.paused) {
+    audio.muted = false;
+    audio.play();
+  }
+
+  if(btnMusik) btnMusik.textContent = "⏸";
+
+  // animasi buka (lebih halus)
+  const landing = document.getElementById("landing");
+  landing.style.opacity = "0";
+
+  setTimeout(() => {
+    landing.style.display = "none";
+  }, 500);
+
+  const undangan = document.getElementById("undangan");
+  undangan.style.display = "block";
+
+  setTimeout(() => {
+    undangan.style.opacity = "1";
+  }, 100);
+});
+
+/* =========================
+   TOGGLE MUSIK
+========================= */
+if(btnMusik){
+  btnMusik.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      btnMusik.textContent = "⏸";
+    } else {
+      audio.pause();
+      btnMusik.textContent = "▶";
+    }
+  });
+}
+</script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/prelo.js"></script>
 
