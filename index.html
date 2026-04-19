@@ -30,7 +30,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
     <!-- Begin Script for Countdown -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.coundown.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -125,7 +125,7 @@ html, body {
 }
 
 /* tombol */
-.btn-open {
+.btnUndangan{
   display: inline-block;
   padding: 14px 34px;
   background: #000;
@@ -137,7 +137,7 @@ html, body {
   transition: 0.3s;
 }
 
-.btn-open:hover {
+.btnUndangan:hover {
   background: #333;
 }
 
@@ -154,7 +154,7 @@ body.loaded {
 }
 
 </style>
-  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <link rel="icon" type="image/png" href="image/load.png" />
   
    
 </head>
@@ -163,7 +163,7 @@ body.loaded {
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
-        <img src="./image/1.jpeg" alt="Flower" />
+        <img src="./image/load.png" alt="Flower" />
       </div>
     </div>
     <!-- End Preloader-->
@@ -193,7 +193,7 @@ body.loaded {
       <div class="welcome-place">Di Tempat</div>
     </div>
 
-    <a id="btnUndangan" href="#">
+    <a id="btnUndangan" class="btnUndangan" href="#">
   Open Invitation
 </a>
     </a>
@@ -667,7 +667,7 @@ if(btnMusik){
 }
 </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
   <script src="js/prelo.js"></script>
 
 </body>
