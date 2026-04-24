@@ -1,1 +1,4 @@
- cici-fikri-invitation.my.id
+cici-fikri-invitation.my.id
+Host: www
+Type: CNAME
+Value: zenpetrix.github.io
