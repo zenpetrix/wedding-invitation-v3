@@ -585,7 +585,7 @@ class="button has-tooltip btn-cta">
         duration: 800,
       });
     </script>
-  <script>
+<script>
 const params = new URLSearchParams(window.location.search);
 const nama = params.get("to");
 
@@ -594,7 +594,7 @@ const namaTamuEl = document.getElementById("nama-tamu");
 // tampilkan nama tamu di landing
 if (nama) {
   const namaFix = nama.replace(/\+/g, " ");
-  namaTamuEl.innerText = namaFix;
+  namaTamuEl.innerText = namaFix + " & Keluarga";
 }
 </script>
   <script>
