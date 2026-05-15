@@ -861,12 +861,21 @@ body.preloader-site {
   font-size: 1.25rem;
   font-weight: 900;
   margin-top: 0.5rem;
-  display: inline-block;
   vertical-align: middle;
   text-align: center;
   padding: 10px;
 }
 
+.made {
+  color: #000;
+  font-size: 0.90rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+}
 /* ======================
    KOMENTAR / UCAPAN
    ====================== */

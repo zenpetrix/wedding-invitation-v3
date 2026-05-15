@@ -159,6 +159,12 @@ html, body {
 body.loaded {
   overflow: auto;
 }
+.by {
+  text-align: right;
+  margin-top: 40px;
+  font-size: 15px
+}
+
 
 </style>
  
@@ -205,7 +211,9 @@ body.loaded {
 </a>
     </a>
   </div>
+ 
   </div>
+ 
 
   <div id="undangan" style="display:none;">
     <div class="header-wrapper" id="home">
@@ -565,8 +573,13 @@ class="button has-tooltip btn-cta">
                   <i class="fab fa-instagram"></i> @drfikrii
                 </a>
               </p>
-
+            <div class="space40px"></div>
+                <a class="made">
+              Made by Zen Petrix D.S Tanto
+            </a>
             </div>
+            
+            
  
          </div>
         </div>
@@ -593,8 +606,8 @@ const namaTamuEl = document.getElementById("nama-tamu");
 
 // tampilkan nama tamu di landing
 if (nama) {
-  const namaFix = nama.replace(/\+/g, " ");
-  namaTamuEl.innerText = namaFix + " & Keluarga";
+  const namaFix = decodeURIComponent(nama);
+  namaTamuEl.innerText = namaFix;
 }
 </script>
   <script>
